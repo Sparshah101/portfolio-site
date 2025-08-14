@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 export const Nav = () => {
 	const navItems = ['projects', 'experience'];
-	const [isDark, setIsDark] = useState(false);
+	const [isDark, setIsDark] = useState(true);
 
 	const handleTheme = (e) => {
 		e.preventDefault();
