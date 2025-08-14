@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+.about-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	gap: 2rem;
+}
+.about-text {
+	max-width: 320px;
+	display: flex;
+	flex-direction: column;
+}
+.about-text h1 {
+	font-size: 3rem;
+	line-height: 1;
+	letter-spacing: 0.025em;
+	text-decoration-color: hsl(var(--border) / 0.75);
+	text-decoration-thickness: 2px;
+	font-family: 'Londrina Shadow', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.about-text p {
+	letter-spacing: 0.025em;
+}
+.about-text p:nth-of-type(1) {
+	white-space: nowrap;
+	margin-top: 0.5rem;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+.about-text p:nth-of-type(2) {
+	margin-top: 1rem;
+	line-height: 1.5rem;
+}
+.about-text p:nth-of-type(3) {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 600;
+	text-wrap: balance;
+}
+.contact-text {
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	width: fit-content;
+}
+.contact-text p {
+	margin-top: 0 !important;
+}
+@keyframes bounce {
+	70% {
+		transform: translateY(0%);
+	}
+	80% {
+		transform: translateY(-20%);
+	}
+	90% {
+		transform: translateY(0%);
+	}
+	95% {
+		transform: translateY(-10%);
+	}
+	97% {
+		transform: translateY(0%);
+	}
+	99% {
+		transform: translateY(-4%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.arrow-down-icon {
+	color: hsl(var(--primary));
+	size: 200px;
+	animation: bounce 2s ease infinite;
+}
+.contact-icons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1.5rem;
+	color: hsl(var(--primary));
+	margin-top: 1.5rem;
+}
+.contact-icons button {
+	border: 1px solid hsl(var(--input));
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	background-color: hsl(var(--background));
+	border-radius: calc(var(--radius) - 2px);
+	height: 2.25rem;
+	width: fit-content;
+	color: hsl(var(--primary));
+	display: inline-flex;
+	gap: 1rem;
+	font-weight: 600;
+}
+.icon {
+	color: hsl(var(--primary) / 0.75);
+	transition: color 0.3s ease;
+}
+.icon:hover {
+	color: hsl(var(--primary));
+}
+img {
+	border-radius: var(--radius);
+	max-width: 100%;
+	height: auto;
+	display: block;
+	width: 175px;
+}
+.icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+a {
+	text-decoration: none;
+}
