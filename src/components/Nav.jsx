@@ -16,12 +16,12 @@ export const Nav = () => {
 	useEffect(() => {
 		const rootElement = document.getElementById('root');
 		const theme = localStorage.getItem('theme');
-		if (theme === 'dark') {
-			setIsDark(true);
-			rootElement.classList.add('dark');
-		} else {
+		if (theme === 'light') {
 			setIsDark(false);
 			rootElement.classList.remove('dark');
+		} else {
+			setIsDark(true);
+			rootElement.classList.add('dark');
 		}
 	}, []);
 
@@ -32,13 +32,15 @@ export const Nav = () => {
 			localStorage.setItem('theme', 'dark');
 		} else {
 			rootElement.classList.remove('dark');
-			localStorage.setItem('theme', '');
+			localStorage.setItem('theme', 'light');
 		}
 	}, [isDark]);
 	return (
 		<nav>
 			<ul>
-				<li key="home"><a href="#root">home</a></li>
+				<li key="home">
+					<a href="#root">home</a>
+				</li>
 				{navItems.map((navItem) => (
 					<li key={navItem}>
 						<a href={`#${navItem}`}>{navItem}</a>

@@ -9,9 +9,10 @@ export const Projects = () => {
 				'Don’t have Spotify Premium? Tired of ads and limited skips? Vaultify is your perfect fix, follow the tutorial and start listening your way!',
 			technologies: ['ExpressJS', 'ReactJS', 'MongoDB', 'AWS'],
 			sources: {
-				demo: '',
+				demo: 'https://youtu.be/mCXQQ_RFFjw',
 				tutorial: '',
-				'source (backend)': '',
+				'source (backend)':
+					'https://github.com/OpsEclipse/vaultify-backend',
 			},
 		},
 		{

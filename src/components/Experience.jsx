@@ -35,7 +35,7 @@ export const Experience = () => {
 			],
 		},
 		{
-			title: 'FortMcMurray Sanatan Mandir',
+			title: 'Fort McMurray Sanatan Mandir',
 			position: 'Web Development Assistant',
 			image: 'https://tse3.mm.bing.net/th/id/OIP.F9tR0BamWmBUepg_munvHwHaHa?rs=1&pid=ImgDetMain&o=7&rm=33',
 			start: 'Jan 2024',
