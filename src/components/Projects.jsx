@@ -7,7 +7,13 @@ export const Projects = () => {
 			title: 'Vaultify',
 			description:
 				'Don’t have Spotify Premium? Tired of ads and limited skips? Vaultify is your perfect fix, follow the tutorial and start listening your way!',
-			technologies: ['ExpressJS', 'ReactJS', 'MongoDB', 'AWS'],
+			technologies: [
+				'ExpressJS',
+				'ReactJS',
+				'MongoDB',
+				'AWS',
+				'JavaScript',
+			],
 			sources: {
 				demo: 'https://youtu.be/mCXQQ_RFFjw',
 				tutorial: '',
@@ -25,15 +31,33 @@ export const Projects = () => {
 				'ReactJS',
 				'MongoDB',
 				'Socket.io',
+				'JavaScript',
 			],
 			sources: {
 				source: 'https://github.com/OpsEclipse/To-do-react',
 				website: 'https://to-do-react-1.onrender.com/#/login',
 			},
 		},
+		{
+			image: 'https://github.com/OpsEclipse/ChatKey/raw/main/assets/loginPage.png',
+			title: 'Chat Key',
+			description:
+				'Lightweight messaging app with instant room creation and join-by-key feature, works on IOS and Android.',
+			technologies: [
+				'React Native',
+				'NativeWind',
+				'Firebase (Auth and Firestone)',
+				'TypeScript',
+			],
+			sources: {
+				source: 'https://github.com/OpsEclipse/ChatKey',
+				'demo (IOS)':
+					'https://www.youtube.com/shorts/DRrh8PuZnFk',
+			},
+		},
 	];
 	return (
-		<section  className="project-section">
+		<section className="project-section">
 			<h2>Projects</h2>
 			<div className="projects">
 				{projectItems.map((project, i) => (
