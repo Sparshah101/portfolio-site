@@ -38,8 +38,8 @@ export const Experience = () => {
 			title: 'Fort McMurray Sanatan Mandir',
 			position: 'Web Development Assistant',
 			image: 'https://tse3.mm.bing.net/th/id/OIP.F9tR0BamWmBUepg_munvHwHaHa?rs=1&pid=ImgDetMain&o=7&rm=33',
-			start: 'Jan 2024',
-			end: 'Jun 2025',
+			start: 'Sept 2023',
+			end: 'Jan 2024',
 			points: [
 				'Assisted in maintaining and updating the mandir’s website to improve user accessibility and keep content current.',
 				'Supported development tasks including layout design, content integration, and bug fixes using HTML, CSS, and JavaScript',
