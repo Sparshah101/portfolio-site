@@ -11,8 +11,11 @@ nav {
 	padding-right: 2rem;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
-    color : hsl(var(--muted-foreground));
-    line-height: 24px;
+	color: hsl(var(--muted-foreground));
+	line-height: 24px;
+}
+.hamburgur {
+	display: none;
 }
 ul {
 	display: flex;
@@ -26,24 +29,67 @@ li {
 li a {
 	text-decoration: none;
 	color: inherit;
-    transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
 }
 li a:hover {
-    color: hsl(var(--foreground));
+	color: hsl(var(--foreground));
 }
 button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background-color: transparent;
-    border: none;
-    outline: none;
+	border: none;
+	outline: none;
 	cursor: pointer;
 	width: 36px;
-    height: 36px;
-    border-radius: 6px;
-    transition: background-color 0.2s ease-in-out;
+	height: 36px;
+	border-radius: 6px;
+	transition: background-color 0.2s ease-in-out;
 }
 button:hover {
 	background-color: hsl(var(--accent-foreground) / 0.1);
+}
+/* mobile styles */
+@media (max-width: 768px) {
+	.navItems {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background: hsl(var(--background));
+		width: 100%;
+		padding: 1rem 2rem;
+		gap: 1rem;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	ul.show {
+		display: flex;
+	}
+	.hamburgur {
+		display: block;
+	}
+	.hamburgur {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		width: 36px;
+		height: 36px;
+		border-radius: 6px;
+		font-size: 1.5rem;
+		color: hsl(var(--muted-foreground));
+	}
+	nav {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+	button:active {
+		background-color: none;
+	}
 }

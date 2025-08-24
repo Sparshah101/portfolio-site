@@ -3,8 +3,9 @@ import './nav.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 export const Nav = () => {
-	const navItems = ['projects', 'experience'];
+	const navItems = ['projects', 'experience', 'status'];
 	const [isDark, setIsDark] = useState(true);
+	const [open, setOpen] = useState(false)
 
 	const handleTheme = (e) => {
 		e.preventDefault();
@@ -37,7 +38,8 @@ export const Nav = () => {
 	}, [isDark]);
 	return (
 		<nav>
-			<ul>
+			<button onClick={() => setOpen(!open)} className='hamburgur'>☰</button>
+			<ul className={open ? 'show navItems' : 'navItems'}>
 				<li key="home">
 					<a href="#root">home</a>
 				</li>

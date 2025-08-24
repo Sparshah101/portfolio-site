@@ -1,0 +1,42 @@
+.status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  border: 1px solid hsl(var(--input)) !important;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 0;
+}
+h1 {
+    margin-bottom: 1rem;
+    font-size: 30px;
+    text-align: center;
+    color: hsl(var(--primary));
+}
+.status-container p{
+    margin: 0.5rem 0;
+}
+.status-container p:first-of-type {
+    font-weight: 600;
+    font-size: 24px;
+}
+.status-container p:nth-of-type(2) {
+    font-size: 20px;
+    color: hsl(var(--muted-primary));
+}
+.status-container p:nth-of-type(3) {
+    font-size: 16px;
+    color: hsl(var(--muted-foreground));
+}
+.status-container p:last-of-type {
+    font-size: 16px;
+    color: hsl(var(--muted-foreground));
+}
+.sub {
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    font-style: italic;
+    margin-top: 1rem;
+}
+
