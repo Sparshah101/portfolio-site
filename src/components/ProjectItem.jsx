@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 export const ProjectItem = ({
 	image,
 	title,
@@ -6,7 +7,13 @@ export const ProjectItem = ({
 	sources,
 }) => {
 	return (
-		<div className="project-item">
+		<motion.div
+			initial={{ opacity: 0, y: 50 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.8 }}
+			viewport={{ once: true }}
+			className="project-item"
+		>
 			<div className="image">
 				<img loading="lazy" src={image} alt="project image" />
 			</div>
@@ -32,6 +39,6 @@ export const ProjectItem = ({
 					);
 				})}
 			</ul>
-		</div>
+		</motion.div>
 	);
 };
